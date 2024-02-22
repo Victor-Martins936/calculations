@@ -1,0 +1,123 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: font;
+    src: url(Font/Starborn.ttf);
+}
+
+h1{
+    color: #9100de;
+    font-size: 3em;
+    font-family: font;
+    background: #00000085; border-radius: 13px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    cursor: default;
+}
+
+span{
+    color: rgb(229, 229, 0);
+}
+
+body {
+    background: url(https://cdn.pixabay.com/photo/2020/09/10/03/02/mountains-5559099_1280.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+img{
+    position: absolute;
+    cursor: default;
+}
+
+.img1{
+    left: 1%;
+}
+
+.img2{
+    right: 1%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#calculator {
+    max-width: 360px;
+    background-color: #343434;
+    border-radius: 13px;
+    padding: 18px;
+    box-shadow: 1px 3px 20px 3px #3c0e6b;
+}
+
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 3px;
+    color: #242424;
+    background: #5b5b5b;
+    border: none;
+    box-sizing: border-box;
+}
+
+button {
+    width: calc(25% - 12px);
+    height: 50px;
+    font-size: 22px;
+    margin: 10px 5px;
+    border: none;
+    float: left;
+    background-color: #000000;
+    color: #ffa6b5;
+    box-shadow: 1px 3px 6px 3px #242424;
+}
+
+.operator {
+    color: #65009c;
+    background-color: #050505;
+}
+
+#ac{
+    color: #bb0000;
+}
+
+#ac:active{
+    box-shadow: 1px 3px 20px 3px #b60000;
+}
+
+.equal{
+    width: calc(50% 12px);
+    background-color: #65009c;
+    color: #000000;
+}
+
+.equal:active{
+    box-shadow: 1px 3px 20px 3px #000000;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: translateY(-3px);
+}
+
+button:active{
+    transform: translateY(3px);
+    box-shadow: 1px 3px 20px 3px #65009c;
+}
+
+.number:active{
+    box-shadow: 1px 3px 20px 3px #ffa6b5;
+}
